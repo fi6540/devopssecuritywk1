@@ -18,10 +18,9 @@ spec:
     spec:
       containers:
       - name: quoterxp
-        image: hhmbroekman/student-app:latest
+        image: docker.io/farhad6540/devopssecuritywk1:latest
         imagePullPolicy: Always
         ports:
           - containerPort: 5000
       imagePullSecrets:
-        - name: regcred
-         
+        - name: my-registry-secret
